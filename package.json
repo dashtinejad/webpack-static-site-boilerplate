@@ -6,7 +6,8 @@
   "author": "Mojtaba Dashtinejad <mojtaba@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "webpack": "webpack"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.5",
@@ -17,6 +18,7 @@
     "browser-sync-webpack-plugin": "^1.1.4",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.0.0",
+    "favicons-webpack-plugin": "0.0.7",
     "postcss": "^5.2.15",
     "postcss-color-function": "^3.0.0",
     "postcss-css-variables": "^0.6.0",
