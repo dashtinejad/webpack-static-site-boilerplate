@@ -83,7 +83,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 const elem = document.createElement('h2')
-elem.innerText = 'I am from script'
+elem.innerText = 'I am generated from app.js'
 document.body.appendChild(elem)
 
 /***/ })

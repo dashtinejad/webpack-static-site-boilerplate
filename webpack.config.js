@@ -14,13 +14,23 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: 'css-loader'
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+                // minimize: true,
+              }
+            },
+
+            'postcss-loader',
+          ]
         })
       }
     ]
   },
 
   plugins: [
-    new ExtractTextPlugin('styles.css')
-  ]
+    new ExtractTextPlugin('bundle.css'),
+  ],
 }

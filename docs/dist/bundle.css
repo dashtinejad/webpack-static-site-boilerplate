@@ -1,0 +1,11 @@
+h1 {
+  background: #adff2f;
+}
+
+h2 {
+  background: #87cefa;
+}
+
+.flex {
+  display: flex;
+}
