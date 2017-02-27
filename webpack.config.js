@@ -2,6 +2,7 @@ var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './app.js',
@@ -10,7 +11,7 @@ module.exports = {
   
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './docs/dist')
+    path: path.resolve(__dirname, './docs/')
   },
 
   module: {
@@ -47,14 +48,23 @@ module.exports = {
     // run the browsersync server
     new BrowserSyncPlugin({
       server: {
-        baseDir: ['docs']
+        baseDir: ['./docs/'],
+        index: 'index.html'
       }
     }),
 
     // create favicon
     new FaviconsWebpackPlugin({
       logo: './src/favicon.png',
-      prefix: 'favicon/'
+      prefix: 'favicon/',
+      inject: false,
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/index.ejs',
+      xhtml: true,
+      title: 'Hello World',
+      inject: false,
     })
   ],
 }

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Hello World</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
@@ -36,13 +36,13 @@
   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1496x2048.png">
   <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1536x2008.png">
   
-  <link rel="stylesheet" href="bundle.css" />
+  <% for (var css in htmlWebpackPlugin.files.css) { %><link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>" /><% } %>
 </head>
 
 <body>
   
   <h1>Hello <b>PostCSS</b> From webpack</h1>
 
-  <script src="bundle.js"></script>
+  <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
 </body>
 </html>
