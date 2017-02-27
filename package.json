@@ -20,6 +20,7 @@
     "ejs-compiled-loader": "^1.1.0",
     "extract-text-webpack-plugin": "^2.0.0",
     "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.28.0",
     "postcss": "^5.2.15",
     "postcss-color-function": "^3.0.0",

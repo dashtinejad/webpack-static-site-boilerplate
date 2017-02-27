@@ -11,8 +11,9 @@ module.exports = {
   devtool: 'source-map',
   
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, './docs/')
+    filename: 'js/bundle.js',
+    path: path.resolve(__dirname, './docs/'),
+    publicPath: '../',
   },
 
   module: {
@@ -25,7 +26,7 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                minimize: true,
+                // minimize: true,
                 sourceMap: true,
               }
             },
@@ -41,14 +42,25 @@ module.exports = {
       },
       {
         test: /\.ejs$/,
-        loader: 'ejs-compiled-loader'
+        use: 'ejs-compiled-loader'
+      },
+      {
+        test: /\.(svg|png|jpg|gif|jpeg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+            }
+          }
+        ]
       },
     ]
   },
 
   plugins: [
     // save bundle css as an external file
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin('css/bundle.css'),
 
     // run the browsersync server
     new BrowserSyncPlugin({

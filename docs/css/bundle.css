@@ -1,0 +1,25 @@
+h1 {
+  background: #adff2f;
+}
+h1 b {
+  background: rgba(135, 206, 250, 0.9);
+}
+@media (max-width: 700px) {
+  h1 b {
+    color: red;
+  }
+}
+h2 {
+  background: #87cefa;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html {
+  min-height: 100%;
+  background: url(../images/webpack.png) no-repeat 100% 100%;
+}
+
+/*# sourceMappingURL=bundle.css.map*/
