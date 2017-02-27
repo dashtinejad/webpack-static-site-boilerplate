@@ -18,14 +18,9 @@
     "browser-sync-webpack-plugin": "^1.1.4",
     "css-loader": "^0.26.2",
     "ejs-compiled-loader": "^1.1.0",
-    "ejs-render-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^2.0.0",
     "favicons-webpack-plugin": "0.0.7",
-    "handlebars": "^4.0.6",
-    "handlebars-loader": "^1.4.0",
     "html-webpack-plugin": "^2.28.0",
-    "nunjucks": "^3.0.0",
-    "nunjucks-loader": "^2.4.5",
     "postcss": "^5.2.15",
     "postcss-color-function": "^3.0.0",
     "postcss-css-variables": "^0.6.0",
@@ -35,7 +30,6 @@
     "postcss-nested": "^1.0.0",
     "postcss-partial-import": "^3.1.1",
     "postcss-smart-import": "^0.6.9",
-    "style-loader": "^0.13.2",
     "webpack": "^2.2.1"
   }
 }
