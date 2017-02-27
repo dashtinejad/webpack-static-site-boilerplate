@@ -28,6 +28,11 @@ module.exports = {
             'postcss-loader',
           ]
         })
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: 'babel-loader'
       }
     ]
   },

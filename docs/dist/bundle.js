@@ -74,19 +74,22 @@
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_postcss_styles_postcss__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_postcss_styles_postcss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_postcss_styles_postcss__);
 
 
-const elem = document.createElement('h2')
-elem.innerText = 'I am generated from app.js'
-document.body.appendChild(elem)
+var _console;
 
-console.log('checking sourcemap')
+__webpack_require__(0);
+
+var elem = document.createElement('h2');
+elem.innerText = 'I am generated from app.js';
+document.body.appendChild(elem);
+
+var a = [1, 2, 3];
+console.log('checking sourcemap');
+(_console = console).log.apply(_console, a);
 
 /***/ })
 /******/ ]);
