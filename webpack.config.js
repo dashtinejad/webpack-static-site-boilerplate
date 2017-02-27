@@ -3,6 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var config = require('./config')
 
 module.exports = {
   entry: './app.js',
@@ -62,13 +63,13 @@ module.exports = {
       logo: './src/favicon.png',
       prefix: 'favicon/',
       inject: false,
-      title: 'Hello World',
+      title: config.title,
     }),
 
     new HtmlWebpackPlugin({
       template: './src/layout/index.ejs',
       xhtml: true,
-      title: 'Hello World',
+      title: config.title,
       inject: false,
       filename: 'index.html',
     }),
@@ -76,7 +77,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/layout/about.ejs',
       xhtml: true,
-      title: 'Hello World',
+      title: config.title,
       inject: false,
       filename: 'about.html',
     }),
