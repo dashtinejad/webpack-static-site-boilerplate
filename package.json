@@ -9,6 +9,7 @@
     "start": "webpack"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.5",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^2.0.0",
     "postcss-css-variables": "^0.6.0",

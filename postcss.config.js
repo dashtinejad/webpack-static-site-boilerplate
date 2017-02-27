@@ -1,10 +1,9 @@
 var cssvariables = require('postcss-css-variables')
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   plugins: [
-    // require('postcss-smart-import')({ /* ...options */ }),
-    // require('precss')({ /* ...options */ }),
-    // require('autoprefixer')({ /* ...options */ })
-    cssvariables()
+    cssvariables(),
+    autoprefixer(),
   ]
 }
