@@ -6,6 +6,8 @@ var color = require('postcss-color-function');
 var customProperties = require("postcss-custom-properties")
 
 module.exports = {
+  map: true,
+
   plugins: [
     partial(),
     customProperties(),

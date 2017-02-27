@@ -3,6 +3,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './app.js',
+
+  devtool: 'source-map',
   
   output: {
     filename: 'bundle.js',
@@ -19,7 +21,7 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                // minimize: true,
+                sourceMap: true,
               }
             },
 
