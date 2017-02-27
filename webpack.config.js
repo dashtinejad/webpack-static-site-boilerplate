@@ -37,7 +37,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: 'babel-loader'
-      }
+      },
+      {
+        test: /\.ejs$/,
+        loader: 'ejs-compiled-loader'
+      },
     ]
   },
 
@@ -61,10 +65,11 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/index.ejs',
+      template: './src/layout/index.ejs',
       xhtml: true,
       title: 'Hello World',
       inject: false,
-    })
+      filename: 'index.html',
+    }),
   ],
 }
