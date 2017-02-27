@@ -1,25 +1,20 @@
 Webpack2 PostCSS Boilerplate
 
-1. Initialize your `package.json` file:
+1. Get the repository
 
     ```
-    yarn init -y
+    https://github.com/dashtinejad/webpack-static-site-boilerplate.git
     ```
 
-2. Install `webpack`:
+2. Install dependencies:
 
     ```
-    yarn add --dev webpack
+    yarn install
     ```
 
-3. Create `webpack.config.js` file:
+3. Start the app:
 
     ```
-
+    yarn start
     ```
 
-4. Install `css-loader`:
-
-    ```
-    yarn add --dev css-loader
-    ```
