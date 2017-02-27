@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.postcss$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
