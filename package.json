@@ -9,6 +9,7 @@
     "start": "webpack"
   },
   "devDependencies": {
+    "css-loader": "^0.26.2",
     "webpack": "^2.2.1"
   }
 }

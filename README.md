@@ -15,5 +15,11 @@ Webpack2 PostCSS Boilerplate
 3. Create `webpack.config.js` file:
 
     ```
-    
+
+    ```
+
+4. Install `css-loader`:
+
+    ```
+    yarn add --dev css-loader
     ```
