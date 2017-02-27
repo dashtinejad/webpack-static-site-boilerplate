@@ -1,5 +1,6 @@
 var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './app.js',
@@ -21,6 +22,7 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
+                minimize: true,
                 sourceMap: true,
               }
             },
@@ -39,5 +41,11 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('bundle.css'),
+
+    new BrowserSyncPlugin({
+      server: {
+        baseDir: ['docs']
+      }
+    })
   ],
 }
