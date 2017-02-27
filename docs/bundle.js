@@ -63,17 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81,15 +75,26 @@
 
 var _console;
 
-__webpack_require__(0);
-
-var elem = document.createElement('h2');
-elem.innerText = 'I am generated from app.js';
-document.body.appendChild(elem);
-
 var a = [1, 2, 3];
 console.log('checking sourcemap');
 (_console = console).log.apply(_console, a);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(1);
+
+__webpack_require__(0);
 
 /***/ })
 /******/ ]);

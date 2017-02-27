@@ -62,6 +62,7 @@ module.exports = {
       logo: './src/favicon.png',
       prefix: 'favicon/',
       inject: false,
+      title: 'Hello World',
     }),
 
     new HtmlWebpackPlugin({
@@ -70,6 +71,14 @@ module.exports = {
       title: 'Hello World',
       inject: false,
       filename: 'index.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/layout/about.ejs',
+      xhtml: true,
+      title: 'Hello World',
+      inject: false,
+      filename: 'about.html',
     }),
   ],
 }
