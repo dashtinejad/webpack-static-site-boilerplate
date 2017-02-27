@@ -2,7 +2,7 @@ h1 {
   background: #adff2f;
 }
 h1 b {
-  background: #87cefa;
+  background: rgba(135, 206, 250, 0.9);
 }
 @media (max-width: 700px) {
   h1 b {
